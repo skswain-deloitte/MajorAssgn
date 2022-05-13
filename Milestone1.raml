@@ -1,0 +1,34 @@
+#%RAML 1.0
+/Milestone1:
+  get:
+    responses:
+      "200":
+        body:
+          application/json:
+            type: getDataType
+            items:
+              type: object
+types:
+  getDataType:
+    items:
+      properties:
+        id:
+          example: "2482"
+          type: string
+        name:
+          example: Kartik Kocchar
+          type: string
+        email:
+          example: kartik_kocchar@rutherford.io
+          type: string
+        gender:
+          example: female
+          type: string
+        status:
+          example: inactive
+          type: string
+title: IE-Major-Assignment-Sangram Kishore Swain
+mediaType:
+  - application/json
+protocols:
+  - HTTP

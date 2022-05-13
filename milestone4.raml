@@ -1,0 +1,25 @@
+#%RAML 1.0
+types:
+  ResponseDataType:
+    properties:
+      Name:
+        example: Gorakhanatha Chaturvedi
+        type: string
+      Status:
+        example: active
+        type: string
+      Gender:
+        example: female
+        type: string
+title: IE-Major-Sangram-Kishore-Swain
+mediaType:
+  - application/json
+version: v1
+protocols:
+  - HTTP
+/milestone4:
+  get:
+    responses:
+      "200":
+        body:
+          type: ResponseDataType
